@@ -3,6 +3,11 @@
     src: url("./Associated20%files/Naturaliste.woff") format('woff');
   }
 
+@font-face {
+    font-family: "myfont_2";
+    src: url("./Associated20%files/BernhardModernStd-Roman.woff") format('woff');
+  }
+
   *{
     /* border: .5px solid red; */
     margin: 0;
@@ -15,8 +20,6 @@
     font-size: 50px;
     margin-left: 50px;
 }
-
-
 
 #Header_image {
     width: 100%;
