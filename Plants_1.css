@@ -1,11 +1,11 @@
 @font-face {
     font-family: "myfont";
-    src: url("./Associated20%files/Naturaliste.woff") format('woff');
+    src: url("/Associated20%files/Naturaliste.woff") format('woff');
   }
 
 @font-face {
     font-family: "myfont_2";
-    src: url("./Associated20%files/BernhardModernStd-Roman.woff") format('woff');
+    src: url("/Associated20%files/BernhardModernStd-Roman.woff") format('woff');
   }
   *{
     /* border: .5px solid red; */
