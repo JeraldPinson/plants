@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "myfont_2";
-    src: url("associated files/BernhardModernStd-Roman.woff") format('woff');
+    src: url("./Associated\ files/BernhardModernStd-Roman.woff") format('woff');
   }
   *{
     /* border: .5px solid red; */
