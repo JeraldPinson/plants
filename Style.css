@@ -1,7 +1,7 @@
 @font-face {
     font-family: "myfont";
     /* src: url("/wp-content/themes/blank-canvas/font/Naturaliste.woff") format('woff'); */
-    src: url("associated files/Naturaliste.woff") format('woff');
+    src: url("./associated files/Naturaliste.woff") format('woff');
     /* src: url("associated files/Naturaliste.tff") format('tff'); */
 
   }
