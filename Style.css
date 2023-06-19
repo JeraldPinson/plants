@@ -91,13 +91,57 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
         position: absolute;
         right: 40px;
     }
-
 }
 
+#click_image img{
+    width: 100%;
+    margin-top: 0px;
+}
 
+.click {
+    font-family: myfont_2;
+    font-size: 40px;
+    letter-spacing: .3rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 19px;
+    margin-bottom: 19px;
+    /* margin: 20px; */
+}
 
+#second_section {
+    display: flex;
+}
 
+#second_section_image {
+    flex: 0 0 50%;
+}
 
+#second_section_image img {
+    width: 100%;
+}
+
+#second_section_text {
+    flex: 0 0 50%;
+    padding: 20px;
+}
+
+.second_section_title {
+    font-family: myfont_2;
+    font-size: 50px;
+    letter-spacing: .3rem;
+    display: flex;
+    justify-content: center;
+    /* margin: 20px; */
+}
+
+.second_section_paragraph {
+    font-family: myfont_2;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+}
 
 /* Border layout
 =====================================================================*/
