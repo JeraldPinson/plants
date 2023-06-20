@@ -149,15 +149,16 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
 #second_section {
     display: flex;
     align-items: flex-start;
+    /* background-color: red; */
   }
   
   #second_section_image {
     flex: 0 0 50%;
     position: sticky;
     top: 0;
-    overflow: hidden;
+    overflow: hidden; /* Add this to hide any overflowing content */
   }
-
+  
   #second_section_image img {
     width: 100%; /* Adjust the image width as needed */
     height: auto; /* Preserve the aspect ratio */
@@ -165,9 +166,9 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
   
   #second_section_text {
     flex: 0 0 50%;
-    padding: 20px;
-    overflow-y: scroll;
-    max-height: 100vh;
+    /* padding: 20px; */
+    overflow-y: auto; /* Change to 'auto' for automatic scrollbar */
+    height: 100%; /* Set the height to occupy the full container */
   }
   
   /* Adjust the styling of the text container to maintain proper scroll appearance */
@@ -182,19 +183,21 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
     top: 0;
     background-color: #fff;
     z-index: 1;
-    padding-left: 20px;
-  }
+    /* padding-left: 20px; */
+    /* margin-bottom: 20px;  */
+}
   
   .second_section_paragraph {
     font-family: myfont_2;
     font-size: 30px;
     justify-content: center;
     display: flex;
-    position: sticky;
+    position: relative;
     top: 0;
     background-color: #fff;
-    z-index: 1;
-    padding-left: 20px;
+    z-index: 0;
+    /* padding-left: 20px; */
+    /* margin-bottom: 20px;  */
   }
   
   /* Adjust the scrolling behavior of the text container */
