@@ -102,9 +102,6 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
     margin-bottom: 25px;
 }
 
-#click {
-    size: 100%;
-}
 .click {
     font-family: myfont_2;
     font-size: 40px;
@@ -117,21 +114,18 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
     /* margin: 20px; */
 }
 
-#second_section {
+/* #second_section {
     display: flex;
-}
-
-#second_section_image {
-    flex: 0 0 50%;
+    align-items: flex-start;
 }
 
 #second_section_image img {
     width: 100%;
+    position: sticky;
 }
 
 #second_section_text {
     flex: 0 0 50%;
-    /* padding: 20px; */
 }
 
 .second_section_title {
@@ -140,7 +134,7 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
     letter-spacing: .3rem;
     display: flex;
     justify-content: center;
-    /* margin: 20px; */
+    padding-bottom: 25px;
 }
 
 .second_section_paragraph {
@@ -148,8 +142,78 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
     font-size: 30px;
     justify-content: center;
     display: flex;
-}
+} */
 
+/* Add the following CSS rules at the end of your existing CSS */
+
+#second_section {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  #second_section_image {
+    flex: 0 0 50%;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }
+
+  #second_section_image img {
+    width: 100%; /* Adjust the image width as needed */
+    height: auto; /* Preserve the aspect ratio */
+  }
+  
+  #second_section_text {
+    flex: 0 0 50%;
+    padding: 20px;
+    overflow-y: scroll;
+    max-height: 100vh;
+  }
+  
+  /* Adjust the styling of the text container to maintain proper scroll appearance */
+  .second_section_title {
+    font-family: myfont_2;
+    font-size: 40px;
+    letter-spacing: .3rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    padding-left: 20px;
+  }
+  
+  .second_section_paragraph {
+    font-family: myfont_2;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    padding-left: 20px;
+  }
+  
+  /* Adjust the scrolling behavior of the text container */
+  #second_section_text::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  #second_section_text::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  #second_section_text::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  #second_section_text::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
 /* Border layout
 =====================================================================*/
 :root {
