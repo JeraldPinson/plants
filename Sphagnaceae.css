@@ -220,20 +220,21 @@ main{
 #left_paragraph {
     /* background-color: blueviolet; */
     width: 50%;
-    padding-left: 90px;
+    padding-left: 100px;
     padding-right: 90px;
+    padding-top: 30px;
     /* height: 400vh; */
 }
 
-#text {
+/* #text {
     margin-top: 0;
     padding-top: 30px;
-}
+} */
 
 #right_image {
     /* background-color: aqua; */
-    width: 50%;
-    /* height: 50%; */
+    width: 70%;
+    height: 100%;
     /* position: sticky; */
     /* top:100px; */
     display: flex;
@@ -246,12 +247,21 @@ main{
 
 #right_image img {
     width: 80%;
-    height: 80%;
+    height:80%;
     object-fit: contain;
     position: fixed;
     top: 100px;
   }
   
+  #Sphagnum {
+    font-family: myfont_2;
+    font-size: 40px;
+    letter-spacing: .3rem;
+    display: flex;
+    justify-content: center;
+    /* top: 100px; */
+    /* margin: 20px; */
+}
 
 
 

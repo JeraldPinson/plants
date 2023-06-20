@@ -42,7 +42,9 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
     display: flex;
     /*justify-content: space-between;*/
     left: 0;
-    padding: 10px var(--padx);
+    /* padding: 10px var(--padx); */
+    /* padding: 10px 3%; */
+    padding: 10px 0;
     position: sticky;
     top: 0;
     width: 100%;
@@ -59,7 +61,6 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
     margin: 0 70px;
 }
 
-
 #header_right #nav-toggle { display: none; font-size: 1.1rem; }
 #header_right ul {
     list-style: none;
@@ -67,7 +68,9 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
     margin-left: 0px;
     font-family: 'Cormorant Garamond', serif;
     font-size: 21px;
+    /* font-weight: 900; */
 }
+
 #header_right {
     /* border:2px solid blue; */
     width: 100%;
@@ -96,8 +99,12 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
 #click_image img{
     width: 100%;
     margin-top: 0px;
+    margin-bottom: 25px;
 }
 
+#click {
+    size: 100%;
+}
 .click {
     font-family: myfont_2;
     font-size: 40px;
@@ -105,8 +112,8 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 19px;
-    margin-bottom: 19px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     /* margin: 20px; */
 }
 
@@ -124,12 +131,12 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
 
 #second_section_text {
     flex: 0 0 50%;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .second_section_title {
     font-family: myfont_2;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: .3rem;
     display: flex;
     justify-content: center;
