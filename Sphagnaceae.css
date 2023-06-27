@@ -93,105 +93,6 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
         position: absolute;
         right: 40px;
     }
-
-}
-
-/* .groups  ul{
-    display:flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: center; */
-    /* border:3px solid green; */
-    /* margin-top: 30px;
-    margin-bottom: 20px; /* gave this a border ten px less than the top border because there is a 10 px margin for the .div plant container images*/
-/* } */
-
-/* .groups li {
-    margin-left: 50px;
-    display: flex; /* works without align-items*/
-    /* align-items: center; doesn't work without display flex */
-/* } */
-
-/* .groups img{
-    height: 30px;
-} */
-
-.families {
-    font-size: 20px;
-    font-family: 'Old Standard TT', serif;
-    letter-spacing: 3px;
-    margin-left: 7px;
-}
-
-#container{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* margin-top: 30px; */
-}
-
-
-.div_plant{
-    width: 300px;
-    height: 400px;
-    border-radius: 10px;
-    /* border-color: red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* font-family: 'Old Standard TT', serif;  */
-    font-family: myfont_2;
-}
-
-.div_plant img {
-    height: 300px;
-}
-
-.div_plant > img:hover {
-    opacity: 0.5;
-}
-
-.sub-header {
-    /* font-family: "Bernhard Modern"; */
-    font-family: myfont_2;
-    font-size: 50px;
-    letter-spacing: .3rem;
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.sub-header-text {
-    /* font-family: "Bernhard Modern"; */
-    font-family: myfont_2;
-    font-size: 30px;
-    justify-content: center;
-    display: flex;
-}
-.sub-header-text span {
-    /* border-bottom: 1px solid black; */
-    text-decoration: underline 1.1px;
-    text-underline-offset: 2.5px;
-    cursor: pointer;
-}
-.sub-header-text span:hover{
-    /* border-bottom:none; */
-    text-decoration: none;
-}
-h3{
-    margin: 0px;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    letter-spacing: .4rem;
-    margin-top: 10px;
-}
-
-h4{
-    margin: 5px;
-    font-size: 18px;
-    font-weight: lighter;
-    font-style: italic;
 }
 
 :root {
@@ -226,43 +127,80 @@ main{
     /* height: 400vh; */
 }
 
-/* #text {
-    margin-top: 0;
-    padding-top: 30px;
-} */
-
-#right_image {
-    /* background-color: aqua; */
-    width: 70%;
-    height: 100%;
-    /* position: sticky; */
-    /* top:100px; */
+#second_section {
     display: flex;
-    justify-content: center;
-    height:100vh;
-    /* padding: 30px; */
-    /* height:fit-content; */
-    /* align-items: center; */
-}
-
-#right_image img {
-    width: 80%;
-    height:80%;
-    object-fit: contain;
-    position: fixed;
-    top: 100px;
+    align-items: flex-start;
+    /* background-color: red; */
   }
   
-  #Sphagnum {
+  #second_section_image {
+    flex: 0 0 50%;
+    position: sticky;
+    top: 78px;
+    overflow: hidden;
+  }
+  
+  #second_section_image img {
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    margin: 0 auto 1em;
+    max-width: 1000px;
+    position: relative;
+  }
+  
+  #second_section_text {
+    flex: 0 0 50%;
+    /* padding: 20px; */
+    overflow-y: auto; /* Change to 'auto' for automatic scrollbar */
+    height: 100%; /* Set the height to occupy the full container */
+    margin-top: 10px;
+  }
+  
+  /* Adjust the styling of the text container to maintain proper scroll appearance */
+  .second_section_title {
     font-family: myfont_2;
     font-size: 40px;
     letter-spacing: .3rem;
     display: flex;
     justify-content: center;
-    /* top: 100px; */
-    /* margin: 20px; */
+    padding-bottom: 25px;
+    position: relative;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    /* padding-left: 20px; */
+    /* margin-bottom: 20px;  */
 }
-
+  
+  .second_section_paragraph {
+    font-family: myfont_2;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 0;
+    background-color: #fff;
+    z-index: 0;
+    /* padding-left: 20px; */
+    /* margin-bottom: 20px;  */
+  }
+  
+  /* Adjust the scrolling behavior of the text container */
+  #second_section_text::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  #second_section_text::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  #second_section_text::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  #second_section_text::-webkit-scrollbar-thumb:hover {
+    background: #555;
 
 
 
