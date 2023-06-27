@@ -147,22 +147,26 @@ aside { border: 1px solid #ddd; border-width: 1px 0; margin: 2rem 0; padding: 2r
 /* Add the following CSS rules at the end of your existing CSS */
 
 #second_section {
-    display: flex;
-    align-items: flex-start;
-    /* background-color: red; */
-  }
-  
-  #second_section_image {
-    flex: 0 0 50%;
-    position: sticky;
-    top: 0;
-    overflow: hidden; /* Add this to hide any overflowing content */
-  }
-  
-  #second_section_image img {
-    width: 100%; /* Adjust the image width as needed */
-    height: auto; /* Preserve the aspect ratio */
-  }
+  display: flex;
+  align-items: flex-start;
+  /* background-color: red; */
+}
+
+#second_section_image {
+  flex: 0 0 50%;
+  position: sticky;
+  top: 80px;
+  overflow: hidden;
+}
+
+#second_section_image img {
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  margin: 0 auto 1em;
+  max-width: 1000px;
+  position: relative;
+}
   
   #second_section_text {
     flex: 0 0 50%;
